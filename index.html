@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GUESS THE NUMBER</title>
+</head>
+
+<body>
+        
+        <h1>
+                Congratulaitons you have guessed the right number very easily.
+        </h1>
+        <!-- <p>WRITE A JAVASCRIPT PROGRAMME TO GENERATE A RANDOM VARIABLE AND STORE IT IN A VARIABLE.THE PROGRAMME THEM
+                TAKES AN INPUT FROM THE USER TO TELL THEM WHETHER THE GUESS WAS CORRECT ,GREATER OR LESSER THAN THE
+                ORIGINAL NUMBER. 100 - (number of guesses ) IS THE SCORE OF THE USER .THE PROGRAMME IS EXPECTED TO
+                TERMINATEONCE,THE NUMBER IS GUESSED .NUMBER SHOULD BE BETWEEN 1 - 100. </p> -->
+                
+</body>
+<script>
+        
+        //this generates the random number between 1 to 100
+        let a = Math.floor(Math.random() * 100) + 1;
+        let i;
+        let chances = 0;
+        
+        //send alert untill you guess the right number
+        while (i != a) {
+                if (i < a) {
+                        alert("Enter a bigger number  ");
+                }
+                else if (i > a) {
+                        alert("Enter a smaller number ");
+                }
+                else {
+                        console.log("You have guessed the right number");
+                }
+
+                i = parseInt(prompt("Enter a number between 1 to 100"))
+
+                chances++;
+        }
+
+</script>
+
+</html>
